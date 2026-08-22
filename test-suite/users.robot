@@ -51,6 +51,7 @@ Scenario 2 - Verify Status of First entry
     Create Session
     ...    get user
     ...    ${BASE_URL}
+    ...    headers={"Authorization": "Bearer ${TOKEN}", "Content-Type": "application/json"}
 
     ${response}=    GET On Session
     ...    get user
